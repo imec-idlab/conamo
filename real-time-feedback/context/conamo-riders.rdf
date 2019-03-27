@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:conamo-sosa="http://idlab.ugent.be/conamo-vocab/sosa#"
+	xmlns:conamo-profile="http://idlab.ugent.be/conamo-vocab/profile#"
+	xmlns:riders="http://idlab.ugent.be/conamo/riders#"
+	xmlns:sensors="http://idlab.ugent.be/conamo/sensors#"
+	xmlns:schema="http://schema.org/"
+	xmlns:sosa="http://www.w3.org/ns/sosa/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description rdf:about="http://idlab.ugent.be/conamo/riders#Milan_Peeters">
+	<conamo-profile:monitoredBy rdf:resource="http://idlab.ugent.be/conamo/sensors#BikeDevice_3572"/>
+	<schema:givenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Milan</schema:givenName>
+	<schema:familyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peeters</schema:familyName>
+	<rdf:type rdf:resource="http://idlab.ugent.be/conamo-vocab/profile#Cyclist"/>
+	<schema:gender rdf:resource="http://schema.org/Male"/>
+	<schema:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2003-01-01</schema:birthDate>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1d1gmikbax1">
+	<rdf:type rdf:resource="http://idlab.ugent.be/conamo-vocab/profile#RestingHeartRate"/>
+	<schema:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">60</schema:value>
+	<conamo-profile:isLowerBoundOf rdf:resource="http://idlab.ugent.be/conamo-vocab/profile#_Recovery"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idlab.ugent.be/conamo/riders#Milan_Peeters">
+	<conamo-profile:hasThreshold rdf:nodeID="node1d1gmikbax1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1d1gmikbax2">
+	<rdf:type rdf:resource="http://idlab.ugent.be/conamo-vocab/profile#LongSlowDistanceThreshold"/>
+	<schema:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">147</schema:value>
+	<conamo-profile:isUpperBoundOf rdf:resource="http://idlab.ugent.be/conamo-vocab/profile#_Recovery"/>
+	<conamo-profile:isLowerBoundOf rdf:resource="http://idlab.ugent.be/conamo-vocab/profile#_LongSlowDistance"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idlab.ugent.be/conamo/riders#Milan_Peeters">
+	<conamo-profile:hasThreshold rdf:nodeID="node1d1gmikbax2"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1d1gmikbax3">
+	<rdf:type rdf:resource="http://idlab.ugent.be/conamo-vocab/profile#ExtensiveEnduranceThreshold"/>
+	<schema:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">153</schema:value>
+	<conamo-profile:isUpperBoundOf rdf:resource="http://idlab.ugent.be/conamo-vocab/profile#_LongSlowDistance"/>
+	<conamo-profile:isLowerBoundOf rdf:resource="http://idlab.ugent.be/conamo-vocab/profile#_ExtensiveEndurance"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idlab.ugent.be/conamo/riders#Milan_Peeters">
+	<conamo-profile:hasThreshold rdf:nodeID="node1d1gmikbax3"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1d1gmikbax4">
+	<rdf:type rdf:resource="http://idlab.ugent.be/conamo-vocab/profile#TempoEnduranceThreshold"/>
+	<schema:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">162</schema:value>
+	<conamo-profile:isUpperBoundOf rdf:resource="http://idlab.ugent.be/conamo-vocab/profile#_ExtensiveEndurance"/>
+	<conamo-profile:isLowerBoundOf rdf:resource="http://idlab.ugent.be/conamo-vocab/profile#_TempoEndurance"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idlab.ugent.be/conamo/riders#Milan_Peeters">
+	<conamo-profile:hasThreshold rdf:nodeID="node1d1gmikbax4"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1d1gmikbax5">
+	<rdf:type rdf:resource="http://idlab.ugent.be/conamo-vocab/profile#AerobicThreshold"/>
+	<schema:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">173</schema:value>
+	<conamo-profile:isUpperBoundOf rdf:resource="http://idlab.ugent.be/conamo-vocab/profile#_TempoEndurance"/>
+	<conamo-profile:isLowerBoundOf rdf:resource="http://idlab.ugent.be/conamo-vocab/profile#_BlockTraining"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idlab.ugent.be/conamo/riders#Milan_Peeters">
+	<conamo-profile:hasThreshold rdf:nodeID="node1d1gmikbax5"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1d1gmikbax6">
+	<rdf:type rdf:resource="http://idlab.ugent.be/conamo-vocab/profile#ExtensiveIntervalThreshold"/>
+	<schema:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">182</schema:value>
+	<conamo-profile:isUpperBoundOf rdf:resource="http://idlab.ugent.be/conamo-vocab/profile#_BlockTraining"/>
+	<conamo-profile:isLowerBoundOf rdf:resource="http://idlab.ugent.be/conamo-vocab/profile#_ExtensiveInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idlab.ugent.be/conamo/riders#Milan_Peeters">
+	<conamo-profile:hasThreshold rdf:nodeID="node1d1gmikbax6"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1d1gmikbax7">
+	<rdf:type rdf:resource="http://idlab.ugent.be/conamo-vocab/profile#AnaerobicThreshold"/>
+	<schema:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">189</schema:value>
+	<conamo-profile:isUpperBoundOf rdf:resource="http://idlab.ugent.be/conamo-vocab/profile#_ExtensiveInterval"/>
+	<conamo-profile:isLowerBoundOf rdf:resource="http://idlab.ugent.be/conamo-vocab/profile#_Anaerobic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idlab.ugent.be/conamo/riders#Milan_Peeters">
+	<conamo-profile:hasThreshold rdf:nodeID="node1d1gmikbax7"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1d1gmikbax8">
+	<rdf:type rdf:resource="http://idlab.ugent.be/conamo-vocab/profile#MaximumHeartRate"/>
+	<schema:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">205</schema:value>
+	<conamo-profile:isUpperBoundOf rdf:resource="http://idlab.ugent.be/conamo-vocab/profile#_Anaerobic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://idlab.ugent.be/conamo/riders#Milan_Peeters">
+	<conamo-profile:hasThreshold rdf:nodeID="node1d1gmikbax8"/>
+</rdf:Description>
+
+</rdf:RDF>

@@ -1,0 +1,47 @@
+
+@prefix conamo-sosa : <http://idlab.ugent.be/conamo-vocab/sosa#> .
+@prefix conamo-profile : <http://idlab.ugent.be/conamo-vocab/profile#> .
+@prefix riders : <http://idlab.ugent.be/conamo/riders#> .
+@prefix sensors : <http://idlab.ugent.be/conamo/sensors#> .
+
+@prefix schema : <http://schema.org/> .
+@prefix sosa : <http://www.w3.org/ns/sosa/> .
+@prefix xsd : <http://www.w3.org/2001/XMLSchema#> .
+
+riders:Milan_Peeters conamo-profile:monitoredBy sensors:BikeDevice_3572 .
+riders:Milan_Peeters schema:givenName "Milan"^^xsd:string .
+riders:Milan_Peeters schema:familyName "Peeters"^^xsd:string .
+riders:Milan_Peeters a conamo-profile:Cyclist .
+riders:Milan_Peeters schema:gender schema:Male .
+riders:Milan_Peeters schema:birthDate "2003-01-01"^^xsd:date .
+
+riders:Milan_Peeters conamo-profile:hasThreshold [ a conamo-profile:RestingHeartRate;
+                                                   schema:value "60"^^xsd:float;
+                                                   conamo-profile:isLowerBoundOf conamo-profile:_Recovery ] .
+riders:Milan_Peeters conamo-profile:hasThreshold [ a conamo-profile:LongSlowDistanceThreshold ;
+                                                   schema:value "147"^^xsd:float ;
+                                                   conamo-profile:isUpperBoundOf conamo-profile:_Recovery ;
+                                                   conamo-profile:isLowerBoundOf conamo-profile:_LongSlowDistance ] .
+riders:Milan_Peeters conamo-profile:hasThreshold [ a conamo-profile:ExtensiveEnduranceThreshold ; 
+                                                   schema:value "153"^^xsd:float ;
+                                                   conamo-profile:isUpperBoundOf conamo-profile:_LongSlowDistance ;
+                                                   conamo-profile:isLowerBoundOf conamo-profile:_ExtensiveEndurance ] .
+riders:Milan_Peeters conamo-profile:hasThreshold [ a conamo-profile:TempoEnduranceThreshold ;
+                                                   schema:value "162"^^xsd:float ;
+                                                   conamo-profile:isUpperBoundOf conamo-profile:_ExtensiveEndurance ;
+                                                   conamo-profile:isLowerBoundOf conamo-profile:_TempoEndurance ] .
+riders:Milan_Peeters conamo-profile:hasThreshold [ a conamo-profile:AerobicThreshold ;
+                                                   schema:value "173"^^xsd:float ;
+                                                   conamo-profile:isUpperBoundOf conamo-profile:_TempoEndurance ;
+                                                   conamo-profile:isLowerBoundOf conamo-profile:_BlockTraining ] .
+riders:Milan_Peeters conamo-profile:hasThreshold [ a conamo-profile:ExtensiveIntervalThreshold ;
+                                                   schema:value "182"^^xsd:float ;
+                                                   conamo-profile:isUpperBoundOf conamo-profile:_BlockTraining ;
+                                                   conamo-profile:isLowerBoundOf conamo-profile:_ExtensiveInterval ] .
+riders:Milan_Peeters conamo-profile:hasThreshold [ a conamo-profile:AnaerobicThreshold ;
+                                                   schema:value "189"^^xsd:float ;
+                                                   conamo-profile:isUpperBoundOf conamo-profile:_ExtensiveInterval ;
+                                                   conamo-profile:isLowerBoundOf conamo-profile:_Anaerobic ] .
+riders:Milan_Peeters conamo-profile:hasThreshold [ a conamo-profile:MaximumHeartRate;
+                                                   schema:value "205"^^xsd:float;
+                                                   conamo-profile:isUpperBoundOf conamo-profile:_Anaerobic ] .
